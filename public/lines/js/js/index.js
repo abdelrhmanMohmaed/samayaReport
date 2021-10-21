@@ -35,7 +35,7 @@ function resetForm() {
 }
 
 //logOut Form 
-$('#logout-link').click(function(e) {
+$('#logout-link').click(function (e) {
     e.preventDefault();
     $("#logout-form").submit();
 });
@@ -47,3 +47,4 @@ $(document).ready(function () {
         $('body').css('overflow', 'visible')
     });
 })
+document.addEventListener('contextmenu', event => event.preventDefault());

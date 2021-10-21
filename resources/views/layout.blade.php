@@ -61,8 +61,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 @auth
                     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div class="image">
-                            <img src="{{ asset('lines/img/download2.JPEG') }}" class="img-circle elevation-2"
-                                alt="User Image">
+                            {{-- <img src="{{ asset('lines/img/download2.JPEG') }}" class="img-circle elevation-2"
+                                alt="User Image"> --}}
                             {{-- @if (Auth::user()->role_id == 1)
                                 <img src="{{ asset('lines/img/user/abdo.png') }}" class="img-circle elevation-2"
                                     alt="User Image">

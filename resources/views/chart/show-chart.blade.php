@@ -120,7 +120,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-2">
+                                                {{-- <div class="col-sm-2">
                                                     <div class="form-group">
                                                         <label>Chart Shape</label>
                                                         <select id="chart" onchange="myFunution()" class="form-control">
@@ -133,7 +133,7 @@
                                                             <option value="area">area</option>
                                                         </select>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                                 <div class="col-sm-2">
                                                     <div class="form-group mt-4 p-2">
                                                         <button type="submit" class="btn btn-block btn-outline-primary">
@@ -174,27 +174,24 @@
             placeholder: "Select Part number",
             allowClear: true,
         });
-        ////////////////// 
-        @if (isset($dataPoints))
-            function myFunution() {
-            let chartType = document.getElementById("chart").value;
-            console.log(chartType)
+        //////////////////  
+        window.onload = function() {
+
             var chart = new CanvasJS.Chart("chartContainer", {
-            animationEnabled: true,
-            exportEnabled: true,
-            theme: "light1", // "light1", "light2", "dark1", "dark2"
-            title: {
-            text: "Chart Report"
-            },
-            data: [{
-            type:chartType , //change type to bar, line, area, pie, etc
-            dataPoints: <?php echo json_encode($dataPoints); ?>
-            }]
+                animationEnabled: true,
+                exportEnabled: true,
+                theme: "light1", // "light1", "light2", "dark1", "dark2"
+                title: {
+                    text: "Chart Report"
+                },
+                data: [{
+                    type: "column", //change type to bar, line, area, pie, etc
+                    dataPoints: <?php echo json_encode($dataPoints ?? ''); ?>
+                }]
             });
             chart.render();
-        
-            }
-        @endif
+
+        }
     </script>
 
 @endsection

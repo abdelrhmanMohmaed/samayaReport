@@ -33,7 +33,7 @@
                             <h3 class="card-title"><i class="nav-icon fas fa-user-plus"></i>All Users</h3>
                             <div class="card-tools">
                                 <div class="card-tools">
-                                    <a href="{{ url('dashboard/create/New-Users') }}" class="btn btn-sm btn-danger">
+                                    <a href="{{ url('dashboard/create/New-Users') }}" class="btn btn-sm btn-outline-secondary">
                                         Add New
                                     </a>
                                 </div>
