@@ -68,3 +68,8 @@
 
 
 @endsection
+@section('script')
+    <script>
+        toastr.success('Have fun storming the castle!')
+    </script>
+@endsection

@@ -24,6 +24,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="{{ asset('lines/css/css/adminlte.css') }}">
 
     <link rel="stylesheet" href="{{ asset('lines/css/select2/select2.css') }}">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"> --}}
     <link rel="stylesheet" href="{{ asset('lines/css/select2/fonts.css') }}">
     <link rel="stylesheet" href="{{ asset('lines/css/css/css.css') }}">
 
@@ -148,7 +149,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <li class="nav-item">
                                             <a id="scrap-table" href="{{ url('/dashboard/Users') }}"
                                                 class="nav-link">
-                                                <i class="nav-icon fas  fa-user-cog"></i> 
+                                                <i class="nav-icon fas  fa-user-cog"></i>
                                                 <p>
                                                     All Users
                                                 </p>
@@ -170,7 +171,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         @yield('main')
 
 
-        <div id="loading" class="text-center"> 
+        <div id="loading" class="text-center">
             <div class="lds-ripple">
                 <div class="h-25 w-25 bg-blue"></div>
                 <div class="bg-blue"></div>
@@ -231,6 +232,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="{{ asset('lines/js/select2/select2.js') }}"></script>
     {{-- script chart --}}
     <script src="{{ asset('lines/js/js/chart-canvas.js') }}"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> --}}
     {{-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> --}}
     <script src="{{ asset('lines/js/js/index.js') }}"></script>
 
